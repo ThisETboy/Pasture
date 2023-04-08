@@ -1,0 +1,19 @@
+server:
+  port: 8889
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    url: jdbc:mysql://rm-2zek848bu5ruh64icco.mysql.rds.aliyuncs.com:3306/smartn?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&AllowPublicKeyRetrieval=True
+    username: smartn
+    password: ABCabc123
+mybatis-plus:
+  mapper-locations: mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.example.pasture.model
+
+udp:
+  port: 8888
+  maxUdpDataSize: 4096
